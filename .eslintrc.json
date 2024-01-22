@@ -25,7 +25,7 @@
                 "optionalDependencies": false,
                 "peerDependencies": false
             }
-        ]
-        // "sourceType": "module"
+        ],
+        "sourceType": "module"
     }
 }
