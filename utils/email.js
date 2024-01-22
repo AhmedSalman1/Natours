@@ -6,10 +6,10 @@ const Transport = require('nodemailer-brevo-transport');
 // new Email(user, url).sendWelcome();
 module.exports = class Email {
     constructor(user, url) {
-        (this.to = user.email),
-            (this.firstName = user.name.split(' ')[0]),
-            (this.url = url),
-            (this.from = `Ahmed Ali <${process.env.EMAIL_FROM}>`);
+        this.to = user.email;
+        this.firstName = user.name.split(' ')[0];
+        this.url = url;
+        this.from = `Natours <${process.env.EMAIL_FROM}>`;
     }
 
     newTransport() {
