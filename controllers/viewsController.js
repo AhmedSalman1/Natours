@@ -37,6 +37,7 @@ exports.getTour = catchAsyncError(async (req, res, next) => {
 });
 
 exports.getLoginForm = (req, res) => {
+    if (req.isLoggedIn) return res.redirect('/');
     res.status(200)
         .set(
             'Content-Security-Policy',
@@ -48,6 +49,7 @@ exports.getLoginForm = (req, res) => {
 };
 
 exports.getSignupForm = (req, res) => {
+    if (req.isLoggedIn) return res.redirect('/');
     res.status(200).render('signup', {
         title: 'Sign up to get started',
     });
@@ -91,10 +93,10 @@ exports.updateUserData = catchAsyncError(async (req, res, next) => {
     });
 });
 
-exports.getForgotPassword = catchAsyncError(async (req, res, next) => {
+exports.getForgotPassword = (req, res) => {
     res.status(200).render('forgotPassword');
-});
+};
 
-exports.getResetPassword = catchAsyncError(async (req, res, next) => {
+exports.getResetPassword = (req, res) => {
     res.status(200).render('resetPassword');
-});
+};

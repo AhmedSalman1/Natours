@@ -27,4 +27,8 @@ router.post(
     viewsController.updateUserData,
 );
 
+app.all('*', (req, res, next) => {
+    next(new AppError(`Page not found!`, 404));
+});
+
 module.exports = router;
