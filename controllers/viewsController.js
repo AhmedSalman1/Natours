@@ -93,10 +93,10 @@ exports.updateUserData = catchAsyncError(async (req, res, next) => {
     });
 });
 
-exports.getForgotPassword = (req, res) => {
+exports.getForgotPassword = catchAsyncError(async (req, res, next) => {
     res.status(200).render('forgotPassword');
-};
+});
 
-exports.getResetPassword = (req, res) => {
+exports.getResetPassword = catchAsyncError(async (req, res, next) => {
     res.status(200).render('resetPassword');
-};
+});
