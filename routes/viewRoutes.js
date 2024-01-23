@@ -1,7 +1,6 @@
 const express = require('express');
 const viewsController = require('../controllers/viewsController');
 const authController = require('../controllers/authController');
-const AppError = require('../utils/appError');
 // const bookingController = require('../controllers/bookingController');
 
 const router = express.Router();
@@ -27,9 +26,5 @@ router.post(
     authController.protect,
     viewsController.updateUserData,
 );
-
-router.all('*', (req, res, next) => {
-    next(new AppError(`Page not found!`, 404));
-});
 
 module.exports = router;

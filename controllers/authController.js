@@ -52,7 +52,7 @@ exports.signup = catchAsyncError(async (req, res, next) => {
     // console.log(url);
     await new Email(newUser, url).sendWelcome();
 
-    createSendToken(newUser, 201, res);
+    createSendToken(newUser, 201, req, res);
 });
 
 exports.login = catchAsyncError(async (req, res, next) => {
@@ -70,7 +70,7 @@ exports.login = catchAsyncError(async (req, res, next) => {
     }
 
     //* 3) if everything ok, send token to client
-    createSendToken(user, 200, res);
+    createSendToken(user, 200, req, res);
 });
 
 exports.logout = (req, res) => {
@@ -243,7 +243,7 @@ exports.resetPassword = catchAsyncError(async (req, res, next) => {
 
     //* 3) Update changedPassword property for the user
     //* 4) Log the user in, send JWT
-    createSendToken(user, 200, res);
+    createSendToken(user, 200, req, res);
 });
 
 exports.updatePassword = catchAsyncError(async (req, res, next) => {
@@ -264,5 +264,5 @@ exports.updatePassword = catchAsyncError(async (req, res, next) => {
     //* User.findByIdAndUpdate will NOT work as intended!   (used only for (Create-Save))
 
     //* 4) Log user in, send JWT
-    createSendToken(user, 200, res);
+    createSendToken(user, 200, req, res);
 });
