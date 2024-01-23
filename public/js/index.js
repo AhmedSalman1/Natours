@@ -4,6 +4,7 @@ import { displayMap } from './leaflet';
 import { login, logout, signup, forgotPassword, resetPassword } from './login';
 import { updateSettings } from './updateSettings';
 import { bookTour } from './stripe';
+import { showAlert } from './alerts';
 
 //* DOM ELEMENTS
 const leaflet = document.getElementById('map');
