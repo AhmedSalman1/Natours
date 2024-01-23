@@ -20,7 +20,7 @@ export const login = async (email, password) => {
             }, 1000);
         }
     } catch (err) {
-        showAlert('error', "The email or password you've entered is wrong.");
+        showAlert('error', err.response.data.message);
     }
 };
 
@@ -76,7 +76,7 @@ export const forgotPassword = async (email) => {
             }, 1500);
         }
     } catch (err) {
-        showAlert('error', 'Error resetting password! Try again.');
+        showAlert('error', err.response.data.message);
     }
 };
 
@@ -97,6 +97,6 @@ export const resetPassword = async (password, passwordConfirm, token) => {
             }, 1500);
         }
     } catch (err) {
-        showAlert('error', 'Error resetting password! Try again.');
+        showAlert('error', err.response.data.message);
     }
 };
