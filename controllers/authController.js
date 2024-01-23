@@ -243,7 +243,7 @@ exports.resetPassword = catchAsyncError(async (req, res, next) => {
 
     //* 3) Update changedPassword property for the user
     //* 4) Log the user in, send JWT
-    createSendToken(user, 200, req, res);
+    createSendToken(user, 200, res);
 });
 
 exports.updatePassword = catchAsyncError(async (req, res, next) => {
