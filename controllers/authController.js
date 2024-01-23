@@ -52,7 +52,7 @@ exports.signup = catchAsyncError(async (req, res, next) => {
     // console.log(url);
     await new Email(newUser, url).sendWelcome();
 
-    createSendToken(newUser, 201, req, res);
+    createSendToken(newUser, 201, res);
 });
 
 exports.login = catchAsyncError(async (req, res, next) => {
