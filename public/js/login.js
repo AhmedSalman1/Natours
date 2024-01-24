@@ -20,7 +20,6 @@ export const login = async (email, password) => {
             }, 1000);
         }
     } catch (err) {
-        console.error('Error response from server:', err.response);
         showAlert('error', err.response.data.message);
     }
 };
@@ -98,6 +97,9 @@ export const resetPassword = async (password, passwordConfirm, token) => {
             }, 1500);
         }
     } catch (err) {
-        showAlert('error', err.response.data.message);
+        showAlert(
+            'error',
+            `Error resetting password: ${err.response.data.message}`,
+        );
     }
 };

@@ -58,7 +58,7 @@ const sendErrorProd = (err, req, res) => {
 
         //! B) Programming or other unknown error: don't leak error details
         //* 1) log error
-        console.error('Error 💥', err);
+        console.error('ERROR 💥', err);
         //* 2) send generic message
         return res.status(500).json({
             status: 'error',
@@ -78,7 +78,7 @@ const sendErrorProd = (err, req, res) => {
 
     //! B) Programming or other unknown error: don't leak error details
     //* 1) log error
-    console.error('Error 💥', err);
+    console.error('ERROR 💥', err);
     //* 2) send generic message
     return res.status(err.statusCode).render('error', {
         title: 'Something went wrong!',
@@ -92,9 +92,9 @@ module.exports = (err, req, res, next) => {
     err.statusCode = err.statusCode || 500;
     err.status = err.status || 'error';
 
-    if (process.env.Node_ENV === 'development') {
+    if (process.env.NODE_ENV === 'development') {
         sendErrorDev(err, req, res);
-    } else if (process.env.Node_ENV === 'production') {
+    } else if (process.env.NODE_ENV === 'production') {
         let error = { ...err };
         error.message = err.message;
 
@@ -107,5 +107,4 @@ module.exports = (err, req, res, next) => {
 
         sendErrorProd(error, req, res);
     }
-    next();
 };

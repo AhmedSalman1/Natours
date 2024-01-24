@@ -237,6 +237,10 @@ exports.resetPassword = catchAsyncError(async (req, res, next) => {
 
     user.password = req.body.password;
     user.passwordConfirm = req.body.passwordConfirm;
+    if (user.password != user.passwordConfirm) {
+        return next(new AppError('passwords do not match.', 400));
+    }
+
     user.passwordResetToken = undefined;
     user.passwordResetExpires = undefined;
     await user.save();
