@@ -20,7 +20,8 @@ export const login = async (email, password) => {
             }, 1000);
         }
     } catch (err) {
-        showAlert('error', 'Test');
+        console.error(err.response.data.message);
+        showAlert('error', err.response.data.message);
     }
 };
 
@@ -44,7 +45,7 @@ export const signup = async (name, email, password, passwordConfirm) => {
             }, 1500);
         }
     } catch (err) {
-        showAlert('error', err.response);
+        showAlert('error', err.response.data.message);
     }
 };
 
@@ -76,7 +77,7 @@ export const forgotPassword = async (email) => {
             }, 1500);
         }
     } catch (err) {
-        showAlert('error', error.response.data.message);
+        showAlert('error', err.response.data.message);
     }
 };
 
