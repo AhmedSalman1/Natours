@@ -20,11 +20,8 @@ router.get('/me', authController.protect, viewsController.getAccount);
 router.get('/signup', viewsController.getSignupForm);
 router.get('/my-tours', authController.protect, viewsController.getMyTours);
 
-router.get(
-    '/forgot-password',
-    authController.isLoggedIn,
-    viewsController.getForgotPassword,
-);
+router.get('/forgot-password', viewsController.getForgotPassword);
+router.get('/reset-password/:token', viewsController.getResetPassword);
 
 router.post(
     '/submit-user-data',
