@@ -9,6 +9,7 @@ const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
 const compression = require('compression');
 const cors = require('cors');
+const bodyParser = require('body-parser');
 
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
@@ -23,6 +24,7 @@ const app = express();
 
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
+app.set('trust proxy', 1);
 
 //* Serving static files
 app.use(express.static(path.join(__dirname, 'public')));
@@ -105,6 +107,8 @@ app.post(
 );
 
 //! Body parser, reading data from the body into req.body
+app.use(bodyParser.json());
+
 app.use(express.json({ limit: '10kb' }));
 app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 app.use(cookieParser());
