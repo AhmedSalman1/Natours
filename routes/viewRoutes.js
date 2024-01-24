@@ -21,7 +21,7 @@ router.get('/signup', viewsController.getSignupForm);
 router.get('/my-tours', authController.protect, viewsController.getMyTours);
 
 router.get(
-    '/resetPass',
+    '/forgot-password',
     authController.isLoggedIn,
     viewsController.getForgotPassword,
 );
