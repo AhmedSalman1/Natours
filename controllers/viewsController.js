@@ -61,6 +61,18 @@ exports.getSignupForm = (req, res) => {
     });
 };
 
+exports.getForgotPassword = (req, res) => {
+    res.status(200).render('forgotPassword', {
+        title: 'Forgot Password',
+    });
+};
+
+exports.getResetPassword = (req, res) => {
+    res.status(200).render('resetPassword', {
+        title: 'Reset Password',
+    });
+};
+
 exports.getAccount = (req, res) => {
     res.status(200).render('account', {
         title: 'Your account',
@@ -98,11 +110,3 @@ exports.updateUserData = catchAsyncError(async (req, res, next) => {
         user: updatedUser,
     });
 });
-
-exports.getForgotPassword = (req, res) => {
-    res.status(200).render('forgotPassword');
-};
-
-exports.getResetPassword = (req, res) => {
-    res.status(200).render('resetPassword');
-};
