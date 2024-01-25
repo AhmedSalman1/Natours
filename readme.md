@@ -9,24 +9,28 @@
 <h4 align="center">An Awesome Tour Booking Site Built On Top Of <a href="https://nodejs.org/en/" target="_blank">NodeJS</a>.</h4>
 
  <p align="center">
- <a href="#deployed-version 🚀">Deployed Version</a> •
-  <a href="#key-features ✨">Key Features</a> •
-  <a href="#demonstration 🖥️">Demonstration</a> •
-  <a href="#how-to-use 🤔">How To Use</a> •
+ <a href="#deployed-version">Demo</a> •
+  <a href="#key-features">Key Features</a> •
+  <a href="#demonstration">Demonstration</a> •
+  <a href="#how-to-use">How To Use</a> •
   <a href="#api-usage">API Usage</a> •
-  <a href="#built-with 🔮">Built With</a> •
-  <a href="#installation 🛠️">Installation</a> • 
+  <a href="#built-with">Built With</a> •
+  <a href="#installation">Installation</a> • 
   <a href="#future-updates">Future Updates</a> • 
   <a href="#acknowledgement">Acknowledgement</a>
 </p>
 
-## Deployed Version 🚀
+---
+
+## Deployed Version
 
 Live demo of Natours (Feel free to visit) 👉🏻 : https://natours-tvyz.onrender.com/
 
+###### a free deployed server, could take a few moments for first-time rendering.
+
 ---
 
-## Key Features ✨
+## Key Features
 
 -   **Authentication and Authorization** 🚀
     -   Sign up, Log in, Logout, Update, and reset password.
@@ -49,7 +53,7 @@ Live demo of Natours (Feel free to visit) 👉🏻 : https://natours-tvyz.onrend
 
 ---
 
-## Demonstration 🖥️
+## Demonstration
 
 ---
 
@@ -76,7 +80,7 @@ Get Tours Within Radius 👉🏻 https://natours-tvyz.onrender.com/api/v1/tours/
 
 ---
 
-## How To Use 🤔
+## How To Use
 
 ### Book a Tour 🌐
 
@@ -87,7 +91,7 @@ Get Tours Within Radius 👉🏻 https://natours-tvyz.onrender.com/api/v1/tours/
 5. **Enter the card details (Test Mode):**
     - _Card No._: 4242 4242 4242 4242
     - _Expiry date_: 02 / 25
-    - _CVV_: 222
+    - _CVV_: 375
 6. **Finished!**
 
 ### Manage Bookings 📅
@@ -145,7 +149,7 @@ Follow these steps to set up your local environment for the Natours app:
 
 ---
 
-# Installation 🛠️
+# Installation
 
 You can get the Natours app up and running on your local machine using the following steps:
 
@@ -179,7 +183,7 @@ You can get the Natours app up and running on your local machine using the follo
 
 ---
 
-## Built With 🔮
+## Built With
 
 -   [NodeJS](https://nodejs.org/en/) - JS runtime environment
 -   [Express](http://expressjs.com/) - The web framework used
