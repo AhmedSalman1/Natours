@@ -9,13 +9,13 @@
 <h4 align="center">An Awesome Tour Booking Site Built On Top Of <a href="https://nodejs.org/en/" target="_blank">NodeJS</a>.</h4>
 
  <p align="center">
- <a href="#deployed-version">Deployed Version</a> •
-  <a href="#key-features">Key Features</a> •
-  <a href="#demonstration">Demonstration</a> •
-  <a href="#how-to-use">How To Use</a> •
+ <a href="#deployed-version 🚀">Deployed Version</a> •
+  <a href="#key-features ✨">Key Features</a> •
+  <a href="#demonstration 🖥️">Demonstration</a> •
+  <a href="#how-to-use 🤔">How To Use</a> •
   <a href="#api-usage">API Usage</a> •
-  <a href="#build-with">Built With</a> •
-  <a href="#installation">Installation</a> • 
+  <a href="#built-with 🔮">Built With</a> •
+  <a href="#installation 🛠️">Installation</a> • 
   <a href="#future-updates">Future Updates</a> • 
   <a href="#acknowledgement">Acknowledgement</a>
 </p>
@@ -46,6 +46,12 @@ Live demo of Natours (Feel free to visit) 👉🏻 : https://natours-tvyz.onrend
 -   **Favorite Tours** ❤️
     -   Regular users can add/remove tours to/from their favorites.
 -   **Credit Card Payment** 💳
+
+---
+
+## Demonstration 🖥️
+
+---
 
 ## API Usage
 
@@ -137,6 +143,8 @@ Follow these steps to set up your local environment for the Natours app:
 
         ```
 
+---
+
 # Installation 🛠️
 
 You can get the Natours app up and running on your local machine using the following steps:
@@ -169,6 +177,10 @@ You can get the Natours app up and running on your local machine using the follo
     eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react --save-dev
     ```
 
+---
+
+## Built With 🔮
+
 -   [NodeJS](https://nodejs.org/en/) - JS runtime environment
 -   [Express](http://expressjs.com/) - The web framework used
 -   [Mongoose](https://mongoosejs.com/) - Object Data Modelling (ODM) library
@@ -182,6 +194,8 @@ You can get the Natours app up and running on your local machine using the follo
 -   [Render](https://render.com/) - Cloud platform
 -   [Leaflet](https://leafletjs.com/) - Displaying the different locations of each tour.
 
+---
+
 ## Future Updates
 
 -   Enable PWA
@@ -190,6 +204,8 @@ You can get the Natours app up and running on your local machine using the follo
 -   Recently Viewed Tours
 -   And More! There's always room for improvement!
 
-## Acknowledgement 🙏🏻
+---
+
+## Acknowledgement
 
 -   This project is part of the online course I've taken at Udemy. Thanks to Jonas Schmedtmann for creating this awesome course! Link to the course: [Node.js, Express, MongoDB & More: The Complete Bootcamp 2019](https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/)
