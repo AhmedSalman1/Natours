@@ -55,6 +55,34 @@ Live demo of Natours (Feel free to visit) 👉🏻 : https://natours-tvyz.onrend
 
 ## Demonstration
 
+#### Home Page :
+
+<img src="https://github.com/AhmedSalman1/Natours/blob/master/.README/Home%20Page.gif" />
+
+#### Tour :
+
+<img src="https://github.com/AhmedSalman1/Natours/blob/master/.README/Tour.gif" />
+
+#### Admin Profile :
+
+<img src="https://github.com/AhmedSalman1/Natours/blob/master/.README/Admin.gif" />
+
+#### User Profile :
+
+<img src="https://github.com/AhmedSalman1/Natours/blob/master/.README/User.gif" />
+
+#### Payment Process :
+
+<img src="https://github.com/AhmedSalman1/Natours/blob/master/.README/Payment.gif" />
+
+#### Forget Password :
+
+<img src="https://github.com/AhmedSalman1/Natours/blob/master/.README/Forget.gif" />
+
+#### Reset Password :
+
+<img src="https://github.com/AhmedSalman1/Natours/blob/master/.README/Reset.gif" />
+
 ---
 
 ## API Usage
