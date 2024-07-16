@@ -1332,5 +1332,404 @@ body {
 }
 
 .forgot__password a {
-    font-size: 1.8rem;
+    color: #55c57a;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 1000px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav--tours {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 820px) {
+    body {
+        padding: 0;
+    }
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav--tours,
+    .header__logo {
+        margin-bottom: 0 !important;
+    }
+    img.nav__user-img {
+        height: 5rem;
+        width: 5rem;
+    }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 60vw;
+    }
+    .card {
+        min-height: 60vh;
+    }
+    .card__details {
+        margin-top: 20px;
+    }
+    .heading-tertirary {
+        font-size: 3.5rem;
+    }
+    .card__picture {
+        height: auto;
+    }
+    .card__sub-heading {
+        font-size: 1.8rem;
+    }
+    .card__text {
+        font-size: 2rem;
+    }
+    .card__data {
+        font-size: 2rem;
+    }
+    .card__footer-value {
+        font-size: 2rem;
+    }
+    .card__footer-text {
+        font-size: 1.8rem;
+    }
+    .card .btn {
+        font-size: 2rem !important;
+    }
+
+    .nav__el,
+    .nav__el:link,
+    .nav__el:visited {
+        font-size: 2rem;
+    }
+    .section-header {
+        height: auto;
+    }
+    .heading-box__detail {
+        font-size: 3rem !important;
+        font-weight: 200;
+    }
+    .overview-box__text {
+        font-size: 1.7rem;
+    }
+    .description-box .description__text {
+        font-size: 2rem;
+    }
+    p.reviews__text {
+        font-size: 1.9rem;
+        max-width: 25rem;
+    }
+    svg.reviews__star {
+        height: 2.8rem;
+        width: 2.8rem;
+    }
+    .cta__text {
+        font-size: 2.4rem;
+        font-weight: 400;
+    }
+    button.btn.btn--green.span-all-rows {
+        margin-top: 2rem;
+        font-size: 2.2rem;
+    }
+    img.overview-box__img {
+        height: 4rem !important;
+    }
+    nav.user-view__menu {
+        flex: none;
+    }
+    .side-nav li a {
+        font-size: 1.8rem !important;
+    }
+    .user--main {
+        padding: 0;
+    }
+    .form__input {
+        font-size: 2rem !important;
+        margin-bottom: 2rem;
+    }
+    .form__upload + label {
+        font-size: 2.2rem;
+    }
+    .form__user-photo {
+        height: 10rem;
+        width: 10rem;
+    }
+    button.user__update--btn,
+    button.btn--save-password {
+        margin-top: 2rem;
+        font-size: 2rem !important;
+    }
+    .form__group button {
+        font-size: 1.8rem !important;
+    }
+    a.forgot-password-link {
+        font-size: 2rem;
+    }
+    .alert.alert--success {
+        font-size: 2.5rem;
+        width: 100vw;
+        padding: 2rem;
+    }
+    .alert.alert--error {
+        font-size: 2.5rem;
+        width: 100vw;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 685px) {
+    .nav__el,
+    .nav__el:link,
+    .nav__el:visited {
+        font-size: initial;
+    }
+}
+@media (max-width: 615px) {
+    .nav__el,
+    .nav__el:link,
+    .nav__el:visited {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 600px) {
+    .nav__el,
+    .nav__el:link,
+    .nav__el:visited {
+        font-size: 1.5rem;
+    }
+    .nav--user {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 550px) {
+    body {
+        padding: 0;
+    }
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 0.4rem;
+        justify-content: flex-start;
+    }
+    .nav--tours,
+    .header__logo {
+        margin-bottom: 0 !important;
+    }
+    .nav--user {
+        flex: none;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-grow: 1;
+        align-items: self-end;
+    }
+    .nav__el,
+    .nav__el:link,
+    .nav__el:visited {
+        font-size: 1.4rem;
+    }
+    a.nav__el.nav__el--logout {
+        align-self: center;
+    }
+    .nav__el--cta {
+        padding: 1rem 1rem;
+        border-radius: 5px;
+        border: 1px solid currentColor !important;
+        transition: all 0.3s;
+        justify-content: space-between;
+    }
+    .header__logo img {
+        height: 2rem;
+    }
+    img.nav__user-img {
+        height: 3rem;
+        width: 3rem;
+    }
+    .nav__user--photo {
+        margin-top: 0.5rem !important;
+        /* margin-right: 1rem !important; */
+    }
+    .main {
+        padding: 4rem 3rem;
+    }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 85vw;
+    }
+    .card__details {
+        margin-top: 15px;
+    }
+    .heading-tertirary {
+        font-size: 2.8rem;
+    }
+    .card__sub-heading {
+        font-size: 1.5rem;
+    }
+    .card__text {
+        font-size: 1.8rem;
+    }
+    .card__data {
+        font-size: 1.5rem;
+    }
+    .card__footer-value {
+        font-size: 1.7rem;
+    }
+    .card__footer-text {
+        font-size: 1.5rem;
+    }
+    .card .btn {
+        font-size: 1.2rem !important;
+    }
+
+    .user-view {
+        flex-direction: column;
+    }
+    .user-view__menu {
+        padding: 2rem 0;
+    }
+    .side-nav li {
+        margin-left: 3px;
+    }
+
+    .heading-box__detail {
+        font-size: 1.5rem !important;
+        font-weight: 200;
+        width: max-content;
+    }
+    .overview-box__text {
+        font-size: 1.5rem !important;
+    }
+    .description-box .description__text {
+        font-size: 2rem;
+    }
+    p.reviews__text {
+        font-size: 1.5rem;
+        max-width: 20rem;
+    }
+    svg.reviews__star {
+        height: 2.4rem;
+        width: 2.4rem;
+    }
+    .cta__text {
+        font-size: 2.4rem;
+        font-weight: 400;
+    }
+    button.btn.btn--green.span-all-rows {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        margin-right: 2rem;
+    }
+    img.overview-box__img {
+        height: 5.5rem;
+    }
+    nav.user-view__menu {
+        flex: none;
+    }
+    .side-nav li a {
+        font-size: 1.5rem !important;
+    }
+    .user--main {
+        padding: 0;
+    }
+    .user-view__form-container {
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+    .form__input {
+        font-size: 1.6rem !important;
+        margin-bottom: 2rem;
+    }
+    .form__upload + label {
+        font-size: 1.8rem;
+    }
+    .form__user-photo {
+        height: 10rem;
+        width: 10rem;
+    }
+    button.user__update--btn,
+    button.btn--save-password {
+        margin-top: 2rem;
+        font-size: 2rem !important;
+    }
+    .form__group button {
+        font-size: 1.5rem !important;
+    }
+    a.forgot-password-link {
+        font-size: 1.5rem;
+    }
+    .section-header {
+        height: 65vh !important;
+    }
+    .heading-box .heading-primary {
+        font-size: 4rem;
+    }
+    .section-description {
+        flex-direction: column;
+    }
+    .section-pictures {
+        flex-direction: column;
+    }
+    .picture-box__img--1 {
+        margin-top: -6rem;
+        padding-bottom: 15%;
+    }
+    .picture-box__img--2 {
+        padding-bottom: 15%;
+    }
+    .picture-box__img {
+        margin-bottom: -3.2rem;
+        -webkit-clip-path: polygon(
+            0 var(--section-rotate),
+            100% 0,
+            100% calc(100% - var(--section-rotate)),
+            0 100%
+        );
+    }
+    .picture-box__img:last-child {
+        margin-bottom: -12rem;
+    }
+    .cta__img {
+        height: 10rem;
+        width: 10rem;
+    }
+    .cta {
+        padding: 2rem 0rem 3rem 12rem;
+    }
+    .heading-secondary {
+        flex: 1;
+    }
+    .footer {
+        padding: 0;
+        padding-top: 5rem;
+    }
+    .footer__nav {
+        display: inline-flex;
+        padding: 0 1rem;
+        line-height: 1;
+        text-align: center;
+    }
+    .login-form {
+        padding: 5rem 3rem;
+    }
+    .alert.alert--success {
+        font-size: 1.8rem;
+        width: 100vw;
+        padding: 2rem;
+    }
+    .alert.alert--error {
+        font-size: 1.8rem;
+        width: 100vw;
+        padding: 2rem;
+    }
+    .user-view__content {
+        padding: 2rem 0;
+    }
 }
