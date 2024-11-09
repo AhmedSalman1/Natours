@@ -27,13 +27,26 @@ const userSchema = new mongoose.Schema(
         },
         password: {
             type: String,
-            required: [true, 'Please provide a password'],
+            // required: [true, 'Please provide a password'],
             minlength: 8,
+            select: false,
+            validate: {
+                validator: function (val) {
+                    return this.googleId || val;
+                },
+            },
+        },
+        googleId: {
+            type: String,
+            unique: true,
             select: false,
         },
         passwordConfirm: {
             type: String,
-            required: [true, 'Please confirm your password'],
+            // required: [true, 'Please confirm your password'],
+            required: function () {
+                return !this.googleId;
+            },
             validate: {
                 //! This only works on CREATE and SAVE!
                 validator: function (el) {

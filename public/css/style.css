@@ -238,6 +238,20 @@ body {
     background-color: #55c57a;
 }
 
+.btn--google {
+    background-color: #f6241c;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn--google:hover {
+    background-color: #eb4d4b;
+}
+
 .btn--small {
     padding: 1.25rem 3rem !important;
     font-size: 1.4rem !important;

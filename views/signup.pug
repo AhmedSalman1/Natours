@@ -19,3 +19,8 @@ block content
           input#passwordConfirm.form__input(type='password', placeholder='••••••••', required, minlength='8')    
         .form__group
           button.btn.btn--green Sign up
+      .or-separator
+        h2 Or
+      .form__group
+        a(href='/api/v1/users/google' class='btn btn--google') 
+          | Sign up with Google

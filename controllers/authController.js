@@ -38,6 +38,25 @@ const createSendToken = (user, statusCode, req, res) => {
     });
 };
 
+exports.oAuthCallback = (req, res) => {
+    // Extract token (assuming `req.user` is set by OAuth)
+    const token = req.user;
+
+    // Set the token as a cookie
+    const cookieOptions = {
+        expires: new Date(
+            Date.now() +
+                process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000,
+        ),
+        httpOnly: true,
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: 'Lax', // Prevent CSRF
+    };
+
+    res.cookie('jwt', token, cookieOptions);
+    res.redirect('/');
+};
+
 exports.signup = catchAsyncError(async (req, res, next) => {
     const newUser = await User.create({
         name: req.body.name,

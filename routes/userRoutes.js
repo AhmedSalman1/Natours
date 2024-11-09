@@ -1,8 +1,12 @@
 const express = require('express');
 const userController = require('../controllers/userController');
 const authController = require('../controllers/authController');
+const { oAuthenticated, oCallback } = require('../controllers/passportOAuth');
 
 const router = express.Router();
+
+router.get('/google', oAuthenticated);
+router.get('/google/callback', oCallback, authController.oAuthCallback);
 
 router.post('/signup', authController.signup);
 router.post('/login', authController.login);
