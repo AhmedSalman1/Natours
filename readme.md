@@ -34,6 +34,7 @@ Live demo of Natours (Feel free to visit) 👉🏻 : https://natours-tvyz.onrend
 
 -   **Authentication and Authorization** 🚀
     -   Sign up, Log in, Logout, Update, and reset password.
+    -   Google OAuth (new) for seamless single sign-on, enabling users to log in with their Google accounts.
 -   **User Profile** 🧑‍💼
     -   Update username, photo, email, password, and other information.
     -   Users categorized as regular, admin, lead guide, or guide.
@@ -54,6 +55,10 @@ Live demo of Natours (Feel free to visit) 👉🏻 : https://natours-tvyz.onrend
 ---
 
 ## Demonstration
+
+#### Google OAuth Login :
+
+<img src="https://github.com/AhmedSalman1/Natours/blob/master/.README/Google%20OAuth.gif" />
 
 #### Home Page :
 
@@ -230,8 +235,6 @@ You can get the Natours app up and running on your local machine using the follo
 
 ## Future Updates
 
--   Enable PWA
--   Improve overall UX/UI and fix bugs
 -   Featured Tours
 -   Recently Viewed Tours
 -   And More! There's always room for improvement!
