@@ -24,7 +24,7 @@
 
 ## Deployed Version
 
-Live demo of Natours (Feel free to visit) 👉🏻 : https://natours-tvyz.onrender.com/
+Live demo of Natours (Feel free to visit) 👉🏻 : https://natours-7lr2.onrender.com/
 
 ###### a free deployed server, could take a few moments for first-time rendering.
 
